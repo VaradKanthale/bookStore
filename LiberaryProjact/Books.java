@@ -1,4 +1,4 @@
-package LiberaryProjact;
+package LibraryProjact;
 
 public class Books {
 	int id;
