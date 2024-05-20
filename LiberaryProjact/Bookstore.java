@@ -24,7 +24,7 @@ public class Bookstore {
 			System.out.println("Choice 4 is Specific Books is Get for User");
 			System.out.println("Choice 5 is Users Record Show");
 			System.out.println("Choice 6 is Particular Book is returned to Bookstore");
-            System.out.println("Choice 7 is Shut Down System ...!");
+                        System.out.println("Choice 7 is Shut Down System ...!");
 
 			Scanner sc = new Scanner(System.in);
 			ch = sc.nextInt();
@@ -53,7 +53,7 @@ public class Bookstore {
 				break;
 
 			case 2:
-				System.out.println("Please Show for All Employee Data ");
+				System.out.println("Please Show for All Library Books Data ");
 				Iterator<Books> it = b.iterator();
 				while (it.hasNext()) {
 					Books e1 = it.next();
@@ -65,7 +65,7 @@ public class Bookstore {
 				break;
 
 			case 3:
-				System.out.println("Please Search for Particular Books Data ");
+				System.out.println("Please Search for Particular Library Books Data ");
 				boolean found = false;
 				it = b.iterator();
 				System.out.println("Please Enter Id");
@@ -75,9 +75,7 @@ public class Bookstore {
 					if (e1.getId() == id) {
 						System.out.println(e1);
 						System.out.println("Search record Sucessfully");
-						found = true;
-						
-						
+						found = true;	
 
 					}
 				}
@@ -93,7 +91,7 @@ public class Bookstore {
 				break;
 
 			case 4:
-				System.out.println("Please Get for Particular Book is ");
+				System.out.println("Show for Library Particular Book is ");
 				it = b.iterator();
 				System.out.println("Please Enter Id");
 				id = sc.nextInt();
@@ -112,7 +110,7 @@ public class Bookstore {
 				break;
 
 			case 5:
-				System.out.println("Please Show for All Users Data ");
+				System.out.println("Show for All Users Data ");
 				Iterator<Books> it2 = b2.iterator();
 				while (it2.hasNext()) {
 					Books e3 = it2.next();
